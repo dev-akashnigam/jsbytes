@@ -1,13 +1,13 @@
 let prompt = require('prompt-sync')();
 
 console.log("Please enter principal amount : ");
-let principalAmt = parseInt(prompt());
+let principalAmt = Number(prompt());
 
 console.log("Please enter rate of interest : ");
-let rate = parseFloat(prompt());
+let rate = Number(prompt());
 
 console.log("Please enter time period : ");
-let timePeriod = parseFloat(prompt());
+let timePeriod = Number(prompt());
 
 let simpleInterest = (principalAmt * rate * timePeriod)/100;
 

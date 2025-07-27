@@ -1,10 +1,10 @@
 let prompt = require('prompt-sync')();
 
 console.log("Please enter first number : ");
-let num1 = parseInt(prompt());
+let num1 = Number(prompt());
 
 console.log("Please enter second number : ");
-let num2 = parseInt(prompt());
+let num2 = Number(prompt());
 
 let sum = num1 + num2;
 

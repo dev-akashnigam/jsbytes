@@ -1,7 +1,7 @@
 let prompt = require('prompt-sync')();
 
 console.log("Please enter a decimal number to be rounded off : ");
-let decimalNumber = parseFloat(prompt());
+let decimalNumber = Number(prompt());
 
 let roundedToNearestInteger = Math.round(decimalNumber);
 let roundedToFirstDecimalPlace = Math.round(decimalNumber * 10.0)/10.0;
