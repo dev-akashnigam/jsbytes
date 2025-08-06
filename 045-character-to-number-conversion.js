@@ -1,7 +1,7 @@
 const prompt = require('prompt-sync')();
 
-console.log("Please enter a character: ");
-ch = prompt().charAt(0);
+console.log("Please enter a character (digit b/w 0-9): ");
+const ch = prompt().charAt(0);
 
-numberForCharacter = Number(ch);
+const numberForCharacter = Number(ch);
 console.log(`Number corresponding to the character: '${ch}' = ${numberForCharacter}`);
