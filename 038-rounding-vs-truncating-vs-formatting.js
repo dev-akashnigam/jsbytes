@@ -7,7 +7,7 @@ console.log("Please enter the number of decimal places to round, truncate and fo
 const n = Number(prompt());
 
 const roundedDecimalNo = Math.round( decimalNo * (10 ** n) ) / (10 ** n);
-const truncatedDecimalNo = parseInt( decimalNo * (10 ** n) ) / (10 ** n);
+const truncatedDecimalNo = Number.parseInt( decimalNo * (10 ** n) ) / (10 ** n);
 const formattedDecimalNo = decimalNo.toFixed(n);
 
 console.log(`On Rounding the decimal number: ${decimalNo} to ${n} places of decimal, the number becomes = ${roundedDecimalNo}`);
